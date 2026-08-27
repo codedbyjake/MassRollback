@@ -1,0 +1,29 @@
+{
+    "@metadata": {
+        "authors": ["codedbyjake"]
+    },
+    "massrollback": "Mass rollback",
+    "right-massrollback": "Mass rollback a user's edits",
+    "action-massrollback": "mass rollback edits",
+    "log-name-massrollback": "Mass rollback log",
+    "log-description-massrollback": "This log records mass rollback operations.",
+    "logentry-massrollback-execute": "$1 mass rolled back $4 {{PLURAL:$4|page|pages}} edited by $3: $5",
+    "massrollback-linkoncontribs": "mass rollback",
+    "massrollback-prompt-heading": "Roll back a user's edits",
+    "massrollback-prompt-submit": "Find edits",
+    "massrollback-form-username": "User",
+    "massrollback-form-start": "From",
+    "massrollback-form-end": "To",
+    "massrollback-form-reason": "Reason",
+    "massrollback-error-bad-user": "That user could not be found.",
+    "massrollback-error-bad-dates": "The date range is not valid.",
+    "massrollback-error-token": "Your session has expired. Please try again.",
+    "massrollback-error-no-pages": "No pages were selected.",
+    "massrollback-error-too-many-pages": "Too many pages selected. No more than $1 can be rolled back at once.",
+    "massrollback-list-empty": "$1 has no edits in that date range that can be rolled back.",
+    "massrollback-list-truncated": "Showing the first $1 pages only. Narrow the date range to see the rest.",
+    "massrollback-list-heading": "$1 edited $2 page(s) in this range. Uncheck any you don't want to roll back.",
+    "massrollback-confirm-button": "Roll back selected pages",
+    "massrollback-done": "Rolled back $1 page(s) edited by $2.",
+    "massrollback-failures": "$1 page(s) could not be rolled back:"
+}

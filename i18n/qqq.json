@@ -1,0 +1,29 @@
+{
+    "@metadata": {
+        "authors": ["codedbyjake"]
+    },
+    "massrollback": "{{doc-special|MassRollback}}",
+    "right-massrollback": "{{doc-right|massrollback}}",
+    "action-massrollback": "{{doc-action|massrollback}}",
+    "log-name-massrollback": "{{doc-log-name|massrollback}}",
+    "log-description-massrollback": "{{doc-log-description|massrollback}}",
+    "logentry-massrollback-execute": "{{doc-logentry|massrollback|execute}}\n\nParameters:\n* $1 - the performer (with tool links)\n* $2 - the performer's plain username\n* $3 - the target user's user page\n* $4 - number of pages rolled back\n* $5 - comma-separated list of the rolled-back page titles",
+    "massrollback-linkoncontribs": "Text of the link added to Special:Contributions' tool-links bar for users who can use Special:MassRollback.",
+    "massrollback-prompt-heading": "Legend for the initial form on Special:MassRollback.",
+    "massrollback-prompt-submit": "Submit button text for the initial form.",
+    "massrollback-form-username": "Label for the target username field.",
+    "massrollback-form-start": "Label for the start-of-range date field.",
+    "massrollback-form-end": "Label for the end-of-range date field.",
+    "massrollback-form-reason": "Label for the reason field.",
+    "massrollback-error-bad-user": "Shown when the entered username doesn't resolve to a real user.",
+    "massrollback-error-bad-dates": "Shown when the date range is invalid (e.g. start after end).",
+    "massrollback-error-token": "Shown when the confirmation step's edit token doesn't match.",
+    "massrollback-error-no-pages": "Shown when confirming with no pages selected.",
+    "massrollback-error-too-many-pages": "Shown when a confirm submission has more pages than $wgMassRollbackMaxPages allows. $1 is that limit.",
+    "massrollback-list-empty": "Shown when the user has no rollback-eligible edits in the given range. $1 is the username.",
+    "massrollback-list-truncated": "Shown above the list when it was capped by $wgMassRollbackMaxPages. $1 is that limit.",
+    "massrollback-list-heading": "Heading above the confirmation checklist. $1 is the username, $2 is the number of pages found.",
+    "massrollback-confirm-button": "Button text to confirm and perform the rollback.",
+    "massrollback-done": "Success message after rolling back pages. $1 is the count, $2 is the username.",
+    "massrollback-failures": "Heading above the list of pages that could not be rolled back. $1 is the count."
+}

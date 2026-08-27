@@ -1,0 +1,74 @@
+{
+  "name": "MassRollback",
+  "version": "1.0.0",
+  "author": "[https://github.com/codedbyjake Jake Linford]",
+  "url": "https://github.com/codedbyjake/MassRollback",
+  "description": "Lets staff roll back all of a user's edits within a chosen date range in one go.",
+  "license-name": "MIT",
+  "type": "other",
+
+  "manifest_version": 2,
+
+  "AutoloadNamespaces": {
+    "MediaWiki\\Extension\\MassRollback\\": "includes/"
+  },
+
+  "SpecialPages": {
+    "MassRollback": "MediaWiki\\Extension\\MassRollback\\SpecialMassRollback"
+  },
+
+  "AvailableRights": [
+    "massrollback"
+  ],
+
+  "GroupPermissions": {
+    "massrollback-manager": {
+      "massrollback": true
+    }
+  },
+
+  "LogTypes": [
+    "massrollback"
+  ],
+
+  "LogActionsHandlers": {
+    "massrollback/execute": "LogFormatter"
+  },
+
+  "HookHandlers": {
+    "main": {
+      "class": "MediaWiki\\Extension\\MassRollback\\Hooks"
+    }
+  },
+
+  "Hooks": {
+    "ContributionsToolLinks": "main"
+  },
+
+  "MessagesDirs": {
+    "MassRollback": [
+      "i18n"
+    ]
+  },
+
+  "ExtensionMessagesFiles": {
+    "MassRollbackAlias": "MassRollback.alias.php"
+  },
+
+  "ResourceModules": {
+    "ext.massrollback.styles": {
+      "styles": "ext.massrollback.styles.less"
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "resources",
+    "remoteExtPath": "MassRollback/resources"
+  },
+
+  "config": {
+    "MassRollbackMaxPages": {
+      "value": 500,
+      "description": "Maximum number of pages listed and processed in a single mass rollback."
+    }
+  }
+}
